@@ -4,26 +4,35 @@ const HomePage = () =>{
     
     return(
         <div className="bg-gray-300">
-            <div className="flex bg-sky-600 rounded-3xl">
+            <div className="bg-white rounded-xl shadow-md p-4 mb-4">
+                <textarea
+                    placeholder="What's on your mind?"
+                    className="w-full border rounded-lg p-3 resize-none focus:outline-none focus:ring focus:ring-gray-500"
+                />
+                <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Post
+                </button>
+            </div>
+            <div className="flex bg-blue-950 rounded-3xl">
                 <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
                     <div>
                         <div class="text-xl font-medium text-gray-800 dark:text-blue-50">
-                            ChitChat
+                            ChatBook
                         </div>
                         <div>
                             <p class="text-gray-500 dark:text-gray-200">You have a new message!</p>
-                            <button class=" bg-sky-700 hover:bg-sky-500">
-                                Message
+                            <button class="m-2 p-2 rounded-2xl text-gray-100 bg-sky-700 hover:bg-sky-800">
+                                All Notifications
                             </button>
                         </div>
                         <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
-                            <div>
-                                <button class="btn-primary">Save changes</button>
-                            </div>
-                            <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking- ">Writes upside-down</h3>
+                            <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking- ">Whats New..</h3>
                             <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
                                 The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
                             </p>
+                            <div>
+                                <button className="m-2 p-2 bg-sky-700 hover:bg-sky-800 text-white rounded-2xl">Connect</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,9 +58,6 @@ const HomePage = () =>{
                     </div>
                 </div>
             </div>
-            <div className="text-blue-700">DaisyUi Themes</div>
-            <button class="btn btn-accent btn-outline bg-white">Daisyui button</button>
-            <button class="btn rounded-full hover:bg-gray-800 active:bg-black">Rounded-full</button>
         </div>
   )
 }
