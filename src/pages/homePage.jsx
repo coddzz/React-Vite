@@ -1,9 +1,10 @@
+import earth from "../assets/earth.png"
 
 const HomePage = () =>{
     
     return(
         <div className="bg-gray-300">
-            <div className="flex bg-gray-400 rounded-3xl">
+            <div className="flex bg-sky-600 rounded-3xl">
                 <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
                     <div>
                         <div class="text-xl font-medium text-gray-800 dark:text-blue-50">
@@ -31,25 +32,27 @@ const HomePage = () =>{
                         <div class="md:shrink-0">
                         <img
                             class="h-48 w-full object-cover md:h-full md:w-48"
-                            src="/img/building.jpg"
-                            alt="Modern building architecture"
+                            Img src={earth}
+                            alt="Earth picture"
                         />
                         </div>
                         <div class="p-8">
-                        <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Company retreats</div>
+                        <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Blue Planet</div>
                         <a href="#" class="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
-                            Incredible accommodation for your team
+                            EARTH
                         </a>
                         <p class="mt-2 text-gray-500">
-                            Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
-                            places to do just that.
+                            🌍 Earth is the only known planet that supports life, with diverse ecosystems and rich natural resources.
+                            🌱 It is our shared home, often called the "Blue Planet" because of its vast oceans.
                         </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="text-blue-700">DaisyUi Themes</div>
+            <button class="btn btn-accent btn-outline bg-white">Daisyui button</button>
+            <button class="btn rounded-full hover:bg-gray-800 active:bg-black">Rounded-full</button>
         </div>
   )
 }
-
 export default HomePage;
