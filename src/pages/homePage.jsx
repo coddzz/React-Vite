@@ -1,18 +1,11 @@
-import earth from "../assets/earth.png"
+import earth from "../assets/earth.png";
+import { CreatePost } from "../components/CreatePost";
 
 const HomePage = () =>{
     
     return(
         <div className="bg-gray-300">
-            <div className="bg-white rounded-xl shadow-md p-4 mb-4">
-                <textarea
-                    placeholder="What's on your mind?"
-                    className="w-full border rounded-lg p-3 resize-none focus:outline-none focus:ring focus:ring-gray-500"
-                />
-                <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-                    Post
-                </button>
-            </div>
+            <CreatePost />
             <div className="flex bg-blue-950 rounded-3xl">
                 <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
                     <div>
