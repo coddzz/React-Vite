@@ -1,7 +1,7 @@
 
-export const Header = () =>{
+export const Header = (props) =>{
     return (
-        <h1 className="font-bold font-serif m-4 text-3xl ">To do list</h1>
+        <h1 className="font-bold font-serif m-4 text-3xl ">{props.title}</h1>
     )
 }
 
