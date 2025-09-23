@@ -7,7 +7,7 @@ import { Header } from "../components/header";
 const TestPage = () =>{
     return (
         <div>
-            <Header title= "Coddzz" />
+            <Header />
             <Content />
             <Footer />
         </div>
