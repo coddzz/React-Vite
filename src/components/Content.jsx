@@ -3,6 +3,17 @@ import { useState } from "react";
 
 export const Content = ()=>{
 
+    const [items, setItems] = useState(
+        [
+            {
+                id:1,
+                checked: true,
+                item: "Practice Coding",
+
+            }
+        ]
+    );
+
     const [ count, setCount] = useState(0);
     const [ colourNames, setName ] = useState("Black");
 
