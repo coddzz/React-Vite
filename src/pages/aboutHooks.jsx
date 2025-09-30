@@ -1,17 +1,15 @@
-import { Content } from "../components/Content";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/header";
+import { HookContent } from "../components/AboutHooks";
 
-
-
-const TestPage = () =>{
+const AboutHooks = () =>{
     return (
         <div>
             <Header />
-            <Content />
+            <HookContent />
             <Footer />
         </div>
     )
 }
 
-export default TestPage;
+export default AboutHooks;

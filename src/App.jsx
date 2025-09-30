@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage";
-import ReactHooks from "./pages/reactHooks";
+import Home from "./pages/home";
+import AboutHooks from "./pages/aboutHooks";
 
 const App = () =>{
   return(
     <div className="">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/hooks" element={<ReactHooks />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/hooks" element={<AboutHooks />} />
       </Routes>
     </div>
   )
