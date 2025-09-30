@@ -7,6 +7,7 @@ import PostPage from '../components/PostPage';
 import About from '../components/About';
 import Missing from '../components/Missing';
 import {Footer} from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 
 const home = () => {
@@ -15,10 +16,19 @@ const home = () => {
       <Header />
       <Nav />
       <Home />
-      <NewPost />
+      <NewPost /> 
       <PostPage />
       <About />
-      <Missing />
+      <Missing /><br/>
+
+      <div>
+        <h1>Links</h1>
+        <ul>
+          <li><Link to="/postpage" 
+          className='text-blue-900 underline'>postpage</Link></li>
+        </ul>
+      </div>
+      
       <Footer />
     </div>
   )
