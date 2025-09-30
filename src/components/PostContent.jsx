@@ -1,16 +1,18 @@
 import React from 'react'
 import earth from "../assets/earth.png";
+import { useParams } from 'react-router-dom';
 
 
 export const PostContent = () => {
 
+    const {id} = useParams();
 
 
   return (
     <>
         <div>
             <h1>
-                Post
+                Post {id}
             </h1>
         </div>
         <div className="flex bg-blue-950 rounded-3xl">
