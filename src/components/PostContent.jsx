@@ -3,8 +3,16 @@ import earth from "../assets/earth.png";
 
 
 export const PostContent = () => {
+
+
+
   return (
     <>
+        <div>
+            <h1>
+                Post
+            </h1>
+        </div>
         <div className="flex bg-blue-950 rounded-3xl">
             <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
                 <div>

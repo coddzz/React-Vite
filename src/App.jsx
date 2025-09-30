@@ -31,6 +31,7 @@ const App = () =>{
         <Route path="/posts" element={<Posts />} />
         <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/todolist" element={<TodolistPage />} />
+        <Route path="/postpage/:id" element={<Posts />} />
       </Routes>
     </div>
   )
