@@ -4,6 +4,7 @@ import AboutHooks from "./pages/aboutHooks";
 import Posts from "./pages/posts";
 import TodolistPage from "./pages/todolist";
 import PostPage from "./pages/postPage"
+import Missing from "./components/Missing";
 
 
 const App = () =>{
@@ -35,6 +36,7 @@ const App = () =>{
         <Route path="/todolist" element={<TodolistPage />} />
         <Route path="/postpage/:id" element={<Posts />} />
         <Route path="/postpage/todo" element={<TodolistPage />} /> {/* this works with es6 and above */}     
+        <Route path="*" element={<Missing />} />     
       </Routes>
     </div>
   )

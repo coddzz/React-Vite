@@ -11,8 +11,8 @@ export const PostContent = () => {
   return (
     <>
         <div>
-            <h1>
-                Post {id}
+            <h1 className="m-3 py-2 px-4 border-2 border-black bg-blue-300">
+                Post {id} ...
             </h1>
         </div>
         <div className="flex bg-blue-950 rounded-3xl">
