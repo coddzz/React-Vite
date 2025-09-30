@@ -31,11 +31,13 @@ const App = () =>{
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/posts" element={<Posts />} />
-        <Route path="/postpage" element={<PostPage />} />
         <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/todolist" element={<TodolistPage />} />
-        <Route path="/postpage/:id" element={<Posts />} />
-        <Route path="/postpage/todo" element={<TodolistPage />} /> {/* this works with es6 and above */}     
+        < Route path="/postpage" >
+          <Route index element={<PostPage />} />
+          <Route path=":id" element={<Posts />} />
+          <Route path="todo" element={<TodolistPage />} /> {/* this works with es6 and above */}     
+        </Route>
         <Route path="*" element={<Missing />} />     
       </Routes>
     </div>
