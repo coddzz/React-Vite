@@ -14,8 +14,10 @@ const App = () =>{
           className="hover:bg-amber-200 px-2 py-1 rounded">About</Link></li>
           <li><Link to="/newpost" 
           className="hover:bg-amber-200 px-2 py-1 rounded">NewPost</Link></li>
+          <li><Link to="/posts" 
+          className="hover:bg-amber-200 px-2 py-1 rounded">Posts</Link></li>
           <li><Link to="/hooks" 
-          className="hover:bg-amber-200 px-2 py-1 rounded">About Hooks</Link></li>
+          className="hover:bg-amber-200 px-2 py-1 rounded">Hooks</Link></li>
         </ul>
       </nav>
       <Routes>
