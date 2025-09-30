@@ -9,13 +9,15 @@ const App = () =>{
   return(
     <div className="">
       <nav>
-        <ul  className="flex justify-evenly py-2 px-4 m-2 bg-amber-300 font-semibold">
+        <h1>React + Vite</h1>
+        <h2>Navigation using link {"(App.jsx)"}</h2>
+        <ul  className="flex border-2 rounded-xl justify-evenly py-2 px-4 m-2 bg-amber-300 font-semibold">
           <li><Link to="/" 
           className="hover:bg-amber-200 px-2 py-1 rounded">Home</Link></li>
           <li><Link to="/about" 
-          className="hover:bg-amber-200 px-2 py-1 rounded">About</Link></li>
+          className=" px-2 py-1 rounded">About</Link></li>
           <li><Link to="/newpost" 
-          className="hover:bg-amber-200 px-2 py-1 rounded">NewPost</Link></li>
+          className=" px-2 py-1 rounded">NewPost</Link></li>
           <li><Link to="/posts" 
           className="hover:bg-amber-200 px-2 py-1 rounded">Posts</Link></li>
           <li><Link to="/hooks" 
@@ -26,8 +28,8 @@ const App = () =>{
       </nav>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/posts" element={<Posts />} />
+        <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/todolist" element={<TodolistPage />} />
       </Routes>
     </div>
