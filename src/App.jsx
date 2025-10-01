@@ -5,6 +5,7 @@ import Posts from "./pages/posts";
 import TodolistPage from "./pages/todolist";
 import PostPage from "./pages/postPage"
 import Missing from "./components/Missing";
+import PostLayout from "./components/PostLayout";
 
 
 const App = () =>{
@@ -33,7 +34,7 @@ const App = () =>{
         <Route path="/posts" element={<Posts />} />
         <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/todolist" element={<TodolistPage />} />
-        < Route path="/postpage" >
+        < Route path="/postpage" element={<PostLayout />} >
           <Route index element={<PostPage />} />
           <Route path=":id" element={<Posts />} />
           <Route path="todo" element={<TodolistPage />} /> {/* this works with es6 and above */}     
