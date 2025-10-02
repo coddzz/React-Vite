@@ -6,6 +6,7 @@ import TodolistPage from "./pages/todolist";
 import PostPage from "./pages/postPage"
 import Missing from "./components/Missing";
 import PostLayout from "./components/PostLayout";
+import About from "./components/About";
 
 
 const App = () =>{
@@ -34,11 +35,15 @@ const App = () =>{
         <Route path="/posts" element={<Posts />} />
         <Route path="/hooks" element={<AboutHooks />} />
         <Route path="/todolist" element={<TodolistPage />} />
+        <Route path="/about" element={<About />} />
+
+        {/* nested */ }
         < Route path="/postpage" element={<PostLayout />} >
           <Route index element={<PostPage />} />
           <Route path=":id" element={<Posts />} />
           <Route path="todo" element={<TodolistPage />} /> {/* this works with es6 and above */}     
         </Route>
+
         <Route path="*" element={<Missing />} />     
       </Routes>
     </div>
