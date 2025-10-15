@@ -4,7 +4,7 @@ import logo from "../images/logo.svg"
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-indigo-700 border-b-2 border-indigo-400">
+      <nav className="bg-indigo-700 border-b-4 border-indigo-400">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
@@ -19,13 +19,13 @@ const Navbar = () => {
               <div className="md:ml-auto">
                 <div className="flex space-x-6">
                   <a href="/hm.html"
-                  className="text-white hover:bg-indigo-600 hover:text-white rounded-md px-6 py-2">Home</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-500 hover:border-indigo-500">Home</a>
                   <a href="/contact.html" 
-                  className="text-white hover:bg-indigo-600 hover:text-white rounded-md px-3 py-2">Contact</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Contact</a>
                   <a href="/about.html"
-                  className="text-white hover:bg-indigo-600 hover:text-white rounded-md px-3 py-2">About</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">About</a>
                   <a href="/noti"
-                  className="text-white hover:bg-indigo-600 hover:text-white rounded-md px-3 py-2">Notifications</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Notifications</a>
                 </div>
               </div>
             </div>

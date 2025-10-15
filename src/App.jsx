@@ -1,4 +1,3 @@
-import logo from "./images/logo.svg"
 import Navbar from "./components/Navbar"
 
 
