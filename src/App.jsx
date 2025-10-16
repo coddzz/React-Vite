@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Test />
+      <Test title="lorem ipsum "/>
       <HeroSection />
       <HomeCards />
       
