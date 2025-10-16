@@ -9,10 +9,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Test title="lorem ipsum "/>
+      <Test />
       <HeroSection />
       <HomeCards />
-      
     </>
   )
 }

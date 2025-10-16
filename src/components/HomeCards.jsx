@@ -1,11 +1,23 @@
 import React from 'react'
-
+import Card from './Card'
 const HomeCards = () => {
   return (
     <>
     <section className="py-4">
         <div className="container-xl lg:container m-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
+                <Card>
+                    <h2 className="text-2xl font-bold text-violet-700">For Users</h2>
+                    <p className="mt-2 mb-4 text-gray-900">
+                    Connect with friends, share your moments, and explore trending posts
+                    from around the world.
+                    </p>
+                    <a
+                    href=""
+                    className="inline-block bg-violet-600 text-white rounded-lg px-4 py-2 hover:bg-violet-700 transition">
+                    Go to Feed
+                    </a>
+                </Card>
                 <div className="bg-purple-100 p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold text-violet-700">For Users</h2>
                     <p className="mt-2 mb-4 text-gray-900">
