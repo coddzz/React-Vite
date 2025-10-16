@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Test from "./components/test";
 
 
 const App = () => {
@@ -6,8 +7,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <h1>hello world!</h1>
-      
+      <Test />
     </>
   )
 }

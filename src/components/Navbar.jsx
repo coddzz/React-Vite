@@ -17,15 +17,15 @@ const Navbar = () => {
               <span className="hidden md:block text-white text-2xl font-bold ml-2">React</span>
               <span className="md:hidden text-white text-2xl font-bold ">R</span>
               <div className="md:ml-auto">
-                <div className="flex space-x-6">
+                <div className="flex space-x-6 ml-10">
                   <a href="/hm.html"
-                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-500 hover:border-indigo-500">Home</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-bl hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-500 hover:border-indigo-500">Home</a>
                   <a href="/contact.html" 
-                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Contact</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-br hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Contact</a>
                   <a href="/about.html"
                   className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">About</a>
                   <a href="/noti"
-                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Notifications</a>
+                  className="text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-br hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500">Notifications</a>
                 </div>
               </div>
             </div>
