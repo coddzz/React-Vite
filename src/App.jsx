@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import HomeCards from "./components/HomeCards";
+import JobListings from "./components/JobListings";
 import Navbar from "./components/Navbar"
 import Test from "./components/test";
 
@@ -12,6 +13,7 @@ const App = () => {
       <Test />
       <HeroSection />
       <HomeCards />
+      <JobListings/>
     </>
   )
 }
