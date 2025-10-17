@@ -1,10 +1,13 @@
 import React from 'react'
+import JobListings from '../components/JobListings'
 
 const Jobpage = () => {
   return (
-    <div>
-      <h1 className='text-purple-600'>JobPage..</h1>
-    </div>
+    <>
+      <section className='bg-gray-50 px-4 py-6'>
+        <JobListings/>
+      </section>
+    </>
   )
 }
 
