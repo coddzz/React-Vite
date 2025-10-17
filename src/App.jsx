@@ -1,23 +1,15 @@
-import HeroSection from "./components/HeroSection";
-import HomeCards from "./components/HomeCards";
-import JobListings from "./components/JobListings";
-import Navbar from "./components/Navbar"
-import Test from "./components/test";
-import ViewAllJobs from "./components/ViewAllJobs";
-
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Homepage from './pages/Homepage'
 
 const App = () => {
-
   return (
-    <>
-      <Navbar />
-      <Test />
-      <HeroSection />
-      <HomeCards />
-      <JobListings/>
-      <ViewAllJobs/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage/>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App;
+export default App
