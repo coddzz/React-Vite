@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import MainLayout from './layouts/MainLayout'
+import Jobpage from './pages/Jobpage'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<MainLayout/>}>
           <Route index element={<Homepage/>}/>
+          <Route path='/jobs' element={<Jobpage/>}/>
           {/*Nested Routes*/}
         </Route>
       </Routes>
