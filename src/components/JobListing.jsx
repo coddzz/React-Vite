@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import {FaLocationDot} from 'react-icons/fa6';
 const JobListing = ({job}) => {
 
     const [showFullDescription, setShowFullDescription] = useState(false);
@@ -31,7 +31,9 @@ const JobListing = ({job}) => {
                 <div className="border border-gray-300 mb-5"></div>
 
                 <div className="flex flex-col lg:flex-row justify-between mb-4">
+                    
                     <div className="text-blue-950 mb-3">
+                        <FaLocationDot className='inline text-lg m-1 mr-1'/>
                         {job.location}
                     </div>
                 <a href={`/job/${job.id}`} 
