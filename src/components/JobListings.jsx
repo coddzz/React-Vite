@@ -9,6 +9,7 @@ const JobListings = ({isHome=false}) => {
   return (
     <>
     <h2 className='mx-15 my-5 px-4 py-2 bg-sky-200 text-gray-800 font-extrabold text-xl shadow-md'>Start Your Career Today.. &#128395; </h2>
+    <h2 className=' m-auto px-4 py-2 md:max-w-2xl md:text-xl text-lg max-w-xs text-center bg-gray-50 font-sans text-gray-700 rounded-lg'>{ isHome ? 'Recent Jobs' : 'Browse Jobs'}</h2>
     <div className='mx-10 grid grid-cols-1 md:grid-cols-3 gap-6'>
         {jobListings.map((job) => (
         <JobListing key={job.id} job={job}/>
