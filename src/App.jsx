@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import MainLayout from './layouts/MainLayout'
 import Jobpage from './pages/Jobpage'
+import NotFoundpage from './pages/NotFoundpage'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route path='/' element={<MainLayout/>}>
           <Route index element={<Homepage/>}/>
           <Route path='/jobs' element={<Jobpage/>}/>
+          <Route path='*' element={<NotFoundpage/>}/>
           {/*Nested Routes*/}
         </Route>
       </Routes>
