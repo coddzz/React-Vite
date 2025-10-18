@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage'
 import MainLayout from './layouts/MainLayout'
 import Jobpage from './pages/Jobpage'
 import NotFoundpage from './pages/NotFoundpage'
+import NotesPage from './pages/NotesPage'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<MainLayout/>}>
           <Route index element={<Homepage/>}/>
           <Route path='/jobs' element={<Jobpage/>}/>
+          <Route path='/notes' element={<NotesPage/>}/>
           <Route path='*' element={<NotFoundpage/>}/>
           {/*Nested Routes*/}
         </Route>
