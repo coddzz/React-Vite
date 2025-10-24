@@ -7,6 +7,11 @@ const Navbar = () => {
 
   const linkclass = ({isActive})=> isActive ? 'text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-bl hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-500 hover:border-indigo-500 hover:shadow-md hover:shadow-blue-900' : 'text-white px-3 py-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-br hover:from-indigo-700 hover:to-indigo-500 border-1 border-indigo-700 hover:border-indigo-500 hover:shadow-md hover:shadow-blue-900';
   
+  const fadeIn = {
+  hidden: { opacity: 0, x: -50 },
+  show: { opacity: 1, x: 0 },
+};
+
   return (
     <>
       <nav className="bg-indigo-700 border-b-4 border-indigo-400">
@@ -14,9 +19,10 @@ const Navbar = () => {
           <div className="flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
               <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
+                  variants={fadeIn}
+                  initial="hidden"
+                  animate="show"
+                  transition={{ duration: 0.5, ease: "easeOut" }}
                   className='flex flex-row items-center justify-center'>
                 <NavLink className="flex flex-shrink-0 items-center mr-1" to="/">
                   <img 
