@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Counter from '../features/counter/counter'
+
 
 const NotesPage = () => {
 
@@ -40,6 +42,12 @@ const NotesPage = () => {
                 <button className="bg-amber-400 px-2 py-2 rounded-xl m-4 hover:bg-amber-500" onClick = {reset}> Reset </button>
             </div>
         </div>
+    </div>
+    <div className='m-auto mt-5 mx-10 rounded-xl px-4 py-2 bg-sky-300 text-gray-700 font-extrabold text-xl shadow-md'>
+        React-Redux &#9733;
+    </div>
+    <div className='max-w-3xl m-4 mt-5 mx-10 rounded-xl px-4 py-2'>
+        <Counter/> {/* using reduxjs toolkit*/}
     </div>
     </>
   )
